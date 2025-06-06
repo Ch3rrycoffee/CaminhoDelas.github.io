@@ -1,0 +1,206 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Cabeçalho com margem no topo e elementos alinhados lado a lado */
+.cabecalho {
+              /* Margem no topo */
+  background-color: #7c3c7c;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+   height: 120px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+
+/* Logo (imagem à esquerda) */
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+
+/* Container do menu */
+.menu-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* Menu de navegação */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+
+.menu li a:hover {
+  color: #dd43e6;
+}
+
+
+.centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+<style>
+  .minha-div {
+    background-color: rgb(194, 115, 192);
+    color: rgb(0, 0, 0);
+  }
+</style>
+
+
+/* Estilização geral do container */
+.container {
+  background-color: #ffffff;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Estilo do section que segura os blocos */
+#topicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+
+/* Estilo de cada coluna */
+.coluna {
+  width: 200px;
+  text-align: center;
+}
+
+
+/* Imagens (ícones) */
+.ícone {
+  max-width: 100%;
+  height: auto;
+}
+.conteudo-principal {
+  padding-top: 140px; /* um pouco maior que a altura do header */
+}
+.faixa-video {
+  background-color: #954c9d;
+  width: 100vw;
+  padding: 40px 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 40px 0 0 0; /* margem superior de 40px */
+}
+
+.faixa-video iframe {
+  width: 90vw;
+  max-width: 900px;
+  height: 514px;
+  border: none;
+}
+.conteudo-principal > div {
+  margin-bottom: 40px;
+}
+/* Torna o texto do bloco #topicos preto  */
+#topicos,
+#topicos h4,
+#topicos p {
+  color: #000;   /* preto */
+}
+
+/* (opcional) caso você use o id "Tópicos" com acento */
+#Tópicos,
+#Tópicos h4,
+#Tópicos p {
+  color: #000;
+}
+.rodape {
+  background-color: #aa52b6;  
+  color: #333;                
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+.rodape a {
+  background-color: 
+  color:   background-color: #aa52b6;  
+;            
+  text-decoration: none;
+}
+
+.rodape a:hover {
+  text-decoration: underline;
+}
+
+.container-footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.imagem-texto {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+  margin: 40px 0;
+  padding: 20px 0;
+}
+
+.imagem-texto img {
+  width: 300px;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.imagem-texto .texto {
+  flex: 1;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .imagem-texto {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagem-texto img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
